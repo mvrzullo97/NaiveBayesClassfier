@@ -12,7 +12,7 @@ set.seed(1)
 Data <- read.csv(file="insert_path/emails.csv")
 colnames(Data)<-c("text","label")
 
-# choose which algortihms to use
+# choose the algortihms
 multinomial <- TRUE
 bernoulli <- TRUE
 lab0 <- "ham"
@@ -156,18 +156,3 @@ if (multinomial){
 
 print(paste("Accuracy Bernoulli NB -> ",signif(bern_nb$overall[1],digits = 3), sep = ""))
 print(paste("Accuracy Multinomial NB -> ",signif(multi_nb$overall[1],digits = 3), sep = ""))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
