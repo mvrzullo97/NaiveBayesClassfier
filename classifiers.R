@@ -1,5 +1,4 @@
 #--- Libraries
-
 library(tm)
 library(openNLP)
 library(NLP)
