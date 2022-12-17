@@ -9,7 +9,7 @@ library(caret)
 
 set.seed(1)
 # loading dataset
-Data <- read.csv(file="/home/utente/Scrivania/Tesi Magistrale/Exp_spam/emails.csv")
+Data <- read.csv(file="insert_path/emails.csv")
 colnames(Data)<-c("text","label")
 
 # choose which algortihms to use
@@ -35,7 +35,7 @@ p_spam<-length(which(X$label=="spam"))/n
 p_ham<-1-p_spam
 
 # pre-processing step for data clean-up
-Stopwords_Data<-read.csv(file="/home/utente/Scrivania/Tesi Magistrale/Exp_spam/stopwords.csv")
+Stopwords_Data<-read.csv(file="insert_path/stopwords.csv")
 colnames(Stopwords_Data)<-c("stopwords")
 removed_words<-Stopwords_Data$stopwords
 
